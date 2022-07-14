@@ -6,16 +6,16 @@
 {% load custom_filter %}
 <div class="container">
    <div class="border rounded p-4 m-4">
-        <p class="display-4 pl-4 ml-4 btn btn-success rounded-pill">Your Cart</p>
+        <p class="display-4 pl-4 ml-4 btn btn-success rounded-pill">Carrito</p>
         <hr>
         <table class="table">
             <thead>
                 <tr>
-                    <th>Sno.</th>
-                    <th>Image</th>
-                    <th>Product</th>
-                    <th>Price</th>
-                    <th>Quantity</th>
+                    <th>Id</th>
+                    <th>Imagen</th>
+                    <th>Producto</th>
+                    <th>Fecha</th>
+                    <th>Valor</th>
                     <th>Total</th>
                 </tr>
             </thead>
@@ -71,12 +71,12 @@
             <form action="/check-out" method="POST">
                 {% csrf_token %}
                 <div class="form-group">
-                  <label for="">Address</label>
+                  <label for="">Direccion</label>
                   <input type="text" name="address" id="" class="form-control" placeholder="" aria-describedby="helpId">
                   
                 </div>
                 <div class="form-group">
-                    <label for="">Phone</label>
+                    <label for="">Telefono</label>
                     <input type="text" name="phone" id="" class="form-control" placeholder="" aria-describedby="helpId">
                   </div>
 
